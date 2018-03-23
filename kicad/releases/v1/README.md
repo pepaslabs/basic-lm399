@@ -73,7 +73,7 @@ Because most single op amps are pin-compatible, this configuration can be used w
 - TL061, TL071, TL081
 - uA741
 
-Leave the Vos trim circuit unpopulated:
+Leave the Vos trimming circuit unpopulated:
 
 | Component | Populate | Value |
 | --- | ---| --- |
@@ -89,11 +89,47 @@ Example:
 
 ## Single Op Amp Configuration with Vos Trim
 
-FIXME
+In addition to the above components, also populate the input voltage offset (Vos) trimming circuitry.
+
+![](media/trim.png)
+
+| Component | Populate | Value |
+| --- | ---| --- |
+| R1 | ✅ | ??? |
+| R2 | ✅ | ??? |
+| R3 | ✅ | ??? |
+| RV1 | ✅ | ??? |
+
+The component values here can be tailored to your needs, and may require some experimentation to discover.
+
 
 ## Dual op amp configuration
 
-FIXME
+| Component | Populate | Value |
+| --- | ---| --- |
+| ~~U1~~ | ❌ | |
+| ~~U3~~ | ✅ | LM358, etc. |
+
+Because most dual op amps are pin-compatible, this configuration can be used with a number of DIP-8 op amps, e.g.:
+- LM358
+- TL062, TL072, TL082
+- LT1013
+
+You may need to "terminate" the unused op amp:
+
+| Component | Populate | Value |
+| --- | ---| --- |
+| R7 | ✅ | (any large value, e.g. 10k) |
+| R8 | ✅ | (any large value, e.g. 10k) |
+
+Leave the Vos trimming circuit unpopulated:
+
+| Component | Populate | Value |
+| --- | ---| --- |
+| ~~R1~~ | ❌ | |
+| ~~R2~~ | ❌ | |
+| ~~R3~~ | ❌ | |
+| ~~RV1~~ | ❌ | |
 
 
 ## Start-up issues
@@ -106,4 +142,4 @@ That is, if the output pin were very slightly negative at start-up, and a rail-t
 
 One way to solve this issue is to tie a very high value resistor from output to Vcc, so that some current always flows through the zener, keeping the output positive at all times.
 
-The other way to solve this is to use an op amp which cannot go all the way to 0V output when used in a single-supply configuration (i.e., not a rail-to-rail op amp).  The OP07 fits this bill nicely, is fairly precision, and is cheap, so it fits this circuit well.  The LT1001 (which is used in the LM399 datasheet circuits) is essentially Linear Tech's upgraded version of the OP07.
+The other way to solve this is to use an op amp which cannot go all the way to 0V output when used in a single-supply configuration (i.e., a non rail-to-rail op amp).  The OP07 fits this bill nicely, as it is fairly precise, and is cheap.  The LT1001 (which is used in the LM399 datasheet circuits) is essentially Linear Tech's upgraded version of the OP07.
