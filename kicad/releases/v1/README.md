@@ -14,9 +14,13 @@ This board's dimensions are under 50mm x 50mm, which means it fits in the cheape
 
 Full schematic: [pdf](trivial-lm399.pdf)
 
-This board uses the basic "bootstrapped zener" circuit:
+This board uses the basic "bootstrapped zener" concept:
 
 ![](media/bootstrapped-zener.png)
+
+Here's the actual implementation:
+
+![](media/basic-circuit.png)
 
 
 ## Single-package op amp configuration
