@@ -147,3 +147,20 @@ One way to solve this issue is to tie a very high value resistor from output to 
 The other way to solve this is to use an op amp which cannot go all the way to 0V output when used in a single-supply configuration (i.e., a non rail-to-rail op amp).  The OP07 fits this bill nicely, as it is fairly precise, and is cheap.  The LT1001 (which is used in the LM399 datasheet circuits) is essentially Linear Tech's upgraded version of the OP07.
 
 If your output does "stick" at 0V, you can briefly touch the leads of a large-valued resistor (e.g. 10k) from Vcc to output and the circuit will "start".
+
+
+## Ordering this board
+
+Gerber files: [zip](gerbers.zip)
+
+For this board I'd recommend ordering them as a "proto pack" from [DirtyPCB's](https://dirtypcbs.com).  It's about $12 for about 10 boards.
+
+Alternatively, you can order 3 boards from OSHPark for $19: [link](https://oshpark.com/shared_projects/DMMaC4j1).
+
+
+## More than one
+
+Having multiple LM399 references can be handy, as measuring the difference between two references allows you to use a more sensitive range your meter.  6.5-digit meters typically use an LM399 reference internally, so when using the 10V range to measure the 7V output of an LM399 directly, one must ask if you are measuring the drift of the LM399, or the drift of your meter's internal LM399...
+
+If you instead measure the difference between two LM399's, you could instead use the 1V range of your meter, which effectively attenuates the error introduced by your meter's drift by 10x.  If you are lucky and find two LM399's which are less than 100mV apart, you get 100x attenuation and 100nV resolution!  If you get very lucky and find two LM399's which are less than 20 or 30mV apart, you can use relatively inexpensive 5.5-digit meters Keithley 195A (~$100) or HP 3478A (~$125) which feature 100nV resolution on their lowest DCV ranges (20mV and 30mV, respectively).  See also [gear](https://github.com/USACalClub/gear/blob/master/dmms/README.md).
+
