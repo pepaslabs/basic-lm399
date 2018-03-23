@@ -142,6 +142,8 @@ With an ideal op amp, this circuit actually has two stable configurations:
 
 That is, if the output pin were very slightly negative at start-up, and a rail-to-rail op amp was used, the output could "stick" at 0V and be stable there.
 
-One way to solve this issue is to tie a very high value resistor from output to Vcc, so that some current always flows through the zener, keeping the output positive at all times.
+One way to solve this issue is to tie a very high value resistor from output to Vcc, so that some current always flows through the zener, keeping the output positive at all times.  (This circuit board does not have a footprint for such a resistor, but it could be "[bodged](https://www.google.com/search?q=circuit+bodge+wire&oq=circuit+bodge+wire&tbm=isch)" in).
 
 The other way to solve this is to use an op amp which cannot go all the way to 0V output when used in a single-supply configuration (i.e., a non rail-to-rail op amp).  The OP07 fits this bill nicely, as it is fairly precise, and is cheap.  The LT1001 (which is used in the LM399 datasheet circuits) is essentially Linear Tech's upgraded version of the OP07.
+
+If your output does "stick" at 0V, you can briefly touch the leads of a large-valued resistor (e.g. 10k) from Vcc to output and the circuit will "start".
