@@ -105,6 +105,8 @@ The component values here can be tailored to your needs, and may require some ex
 
 ## Dual op amp configuration
 
+![](media/dual-opamp.png)
+
 | Component | Populate | Value |
 | --- | ---| --- |
 | ~~U1~~ | ❌ | |
@@ -119,8 +121,8 @@ You may need to "terminate" the unused op amp:
 
 | Component | Populate | Value |
 | --- | ---| --- |
-| R7 | ✅ | (any large value, e.g. 10k) |
-| R8 | ✅ | (any large value, e.g. 10k) |
+| R7 | ✅ | (any large value, e.g. 100k) |
+| R8 | ✅ | (any large value, e.g. 100k) |
 
 Leave the Vos trimming circuit unpopulated:
 
