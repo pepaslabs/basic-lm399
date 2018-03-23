@@ -16,7 +16,7 @@ Full schematic: [pdf](trivial-lm399.pdf)
 
 This board uses the basic "bootstrapped zener" circuit:
 
-![](bootstrapped-zener.png)
+![](media/bootstrapped-zener.png)
 
 
 ## Single-package op amp configuration
