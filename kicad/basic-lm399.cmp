@@ -1,0 +1,150 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = Wed 10 May 2017 01:28:38 AM CDT
+
+BeginCmp
+TimeStamp = /5912A10C;
+Reference = C1;
+ValeurCmp = 10nF;
+IdModule  = CERCAP_2_059B_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5912A08D;
+Reference = C2;
+ValeurCmp = C_CER;
+IdModule  = CERCAP_2_059B_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5912A01F;
+Reference = C3;
+ValeurCmp = 10nF;
+IdModule  = ANYSSCAP_2_059B_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /59129DE0;
+Reference = CON1;
+ValeurCmp = BARREL_JACK;
+IdModule  = BARREL_JACK_21x55;
+EndCmp
+
+BeginCmp
+TimeStamp = /59129D72;
+Reference = P1;
+ValeurCmp = CONN_1;
+IdModule  = 1pin_040_069;
+EndCmp
+
+BeginCmp
+TimeStamp = /59129DB4;
+Reference = P2;
+ValeurCmp = CONN_1;
+IdModule  = 1pin_040_069;
+EndCmp
+
+BeginCmp
+TimeStamp = /5912B555;
+Reference = P3;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5912B56C;
+Reference = P4;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5912B66E;
+Reference = P5;
+ValeurCmp = CONN_2;
+IdModule  = TEST_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /59129ECE;
+Reference = R1;
+ValeurCmp = ?;
+IdModule  = R_AXIAL_0W25_059A_PL;
+EndCmp
+
+BeginCmp
+TimeStamp = /59129ED9;
+Reference = R2;
+ValeurCmp = ?;
+IdModule  = R_AXIAL_0W25_059A_PL;
+EndCmp
+
+BeginCmp
+TimeStamp = /59129EDF;
+Reference = R3;
+ValeurCmp = ?;
+IdModule  = R_AXIAL_0W25_059A_PL;
+EndCmp
+
+BeginCmp
+TimeStamp = /59129B27;
+Reference = R4;
+ValeurCmp = 1k;
+IdModule  = R_AXIAL_0W25_059A_PL;
+EndCmp
+
+BeginCmp
+TimeStamp = /59129B2D;
+Reference = R5;
+ValeurCmp = 6.8k;
+IdModule  = R_AXIAL_0W25_059A_PL;
+EndCmp
+
+BeginCmp
+TimeStamp = /59129B10;
+Reference = R6;
+ValeurCmp = 1k;
+IdModule  = R_AXIAL_0W25_059A_PL;
+EndCmp
+
+BeginCmp
+TimeStamp = /5912B152;
+Reference = R7;
+ValeurCmp = 100k;
+IdModule  = R_AXIAL_0W25_059A_PL;
+EndCmp
+
+BeginCmp
+TimeStamp = /5912B169;
+Reference = R8;
+ValeurCmp = 100k;
+IdModule  = R_AXIAL_0W25_059A_PL;
+EndCmp
+
+BeginCmp
+TimeStamp = /59129EC1;
+Reference = RV1;
+ValeurCmp = ?;
+IdModule  = 3296W_PL;
+EndCmp
+
+BeginCmp
+TimeStamp = /59129AD5;
+Reference = U1;
+ValeurCmp = LM741;
+IdModule  = DIP8_059A_PL;
+EndCmp
+
+BeginCmp
+TimeStamp = /59129A7E;
+Reference = U2;
+ValeurCmp = LM399;
+IdModule  = TO-46-PLASTIC;
+EndCmp
+
+BeginCmp
+TimeStamp = /5912AE18;
+Reference = U3;
+ValeurCmp = TL062;
+IdModule  = DIP8_059A_PL;
+EndCmp
+
+EndListe
