@@ -1,4 +1,0 @@
-next:
-- pull in updated capacitors lib, use narrower lead spacing capacitors
-- redo board design
-
