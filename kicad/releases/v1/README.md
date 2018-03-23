@@ -1,4 +1,4 @@
-# basic-lm399 v1
+# basic-lm399 (v1)
 
 ![](media/IMG_2578.JPG)
 
