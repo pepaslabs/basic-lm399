@@ -1,5 +1,7 @@
 # basic-lm399 v1
 
+![](media/IMG_2578.JPG)
+
 This board was designed to be a basic "utility" board for working with the [LM399](http://cds.linear.com/docs/en/datasheet/199399fc.pdf).  Some features which support versatiliy:
 
 - This board supports the use of either single or dual-package DIP-8 op amps (whatever you have on hand!)
