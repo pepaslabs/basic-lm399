@@ -1,0 +1,10 @@
+(module 1pin_040_069 (layer F.Cu) (tedit 53325090)
+  (descr "1 pin, 0.040\" drill, 0.069\" round pad")
+  (fp_text reference P1 (at 0 -2.54) (layer F.SilkS) hide
+    (effects (font (size 1.016 1.016) (thickness 0.254)))
+  )
+  (fp_text value CONN_1 (at 0 2.54) (layer F.SilkS) hide
+    (effects (font (size 1.016 1.016) (thickness 0.254)))
+  )
+  (pad 1 thru_hole oval (at 0 0) (size 1.7526 1.7526) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
+)

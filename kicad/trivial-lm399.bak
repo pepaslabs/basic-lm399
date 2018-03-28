@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:trivial-lm399
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,14 +28,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:trivial-lm399-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "2018-03-28"
+Date "20 may 2017"
 Rev ""
 Comp ""
 Comment1 ""
